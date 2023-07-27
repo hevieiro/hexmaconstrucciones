@@ -18,13 +18,13 @@ body {
 }
 a {
   transition: all 0.3s ease;
-  color: #f48701;
+  color: #18CEE3;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #d40;
+  color: #1BE7FF;
 }
 
 a:focus {
@@ -55,7 +55,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #d56b01;
+  color: #18CEE3;
 }
 
 .tm-font-big {
@@ -97,11 +97,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #fe8c01;
+  color: #18CEE3;
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #d56b01;
+  color: #18CEE3;
 }
 
 .nav-item {
@@ -113,14 +113,14 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #d56b01;
+  color: #18CEE3;
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #fff;
-  background-color: #d56b01;
+  background-color: #18CEE3;
   border-radius: 3px;
 }
 
@@ -147,7 +147,7 @@ blockquote {
 
 #infinite {
   background-color: #222;
-  background-image: url(../img/infinite-loop-01.jpg);
+  background-image: url(../img/peakpx.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -197,11 +197,13 @@ blockquote {
 }
 
 .tm-hero-title {
-  font-size: 3.5rem;
-  text-shadow: 2px 2px 2px #333;
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-shadow: 22px 22px 22px #333;
 }
 
 .tm-hero-subtitle {
+  font-weight: 600;
   text-shadow: 2px 2px 2px #333;
 }
 
@@ -350,7 +352,7 @@ blockquote {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #d56b01;
+  color: #18CEE3;
 }
 
 .tm-testimonials-carousel .slick-dots li button:before {
@@ -466,7 +468,7 @@ figure.effect-honey figcaption::before {
   left: 0;
   width: 100%;
   height: 10px;
-  background: #d56b01;
+  background: #18CEE3;
   content: "";
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
@@ -515,7 +517,7 @@ figure.effect-honey:hover h2 i {
 #contact {
   color: white;
   background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
+  background-image: url(../img/footer-image4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;
@@ -564,7 +566,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #d56b01;
+  color: #18CEE3;
 }
 
 .tm-input {
@@ -580,14 +582,14 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
   font-size: 0.9em;
   color: #fff;
-  background-color: #d56b01;
+  background-color: #18CEE3;
   width: 50%;
   margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
   color: #fff;
-  background-color: #fe8c01;
+  background-color: #1BE7FF;
 }
 
 ::placeholder {
