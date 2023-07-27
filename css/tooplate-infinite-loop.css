@@ -49,6 +49,13 @@ blockquote {
   padding-bottom: 40px;
 }
 
+@media (max-width: 700px) {
+  .tm-section-pad-top {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
 .tm-content-box {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -210,6 +217,13 @@ blockquote {
   background: #1be7ff;
   border-radius: 20px;
   margin: 50px 0;
+}
+
+@media (max-width: 700px) {
+  .separator {
+    margin: 10px 0;
+    height: 1.5px;
+  }
 }
 
 .tm-hero-title {
@@ -547,10 +561,12 @@ figure.effect-honey:hover h2 i {
 
 /* Contact */
 
+/* ACA IBA LA IMAGEN DE FONDO DEL CONTACT */
 #contact {
   color: white;
   background-color: #001828;
-  background-image: url(../img/footer-image4.jpg);
+  /* background-image: url(../img/footer-image4.jpg); */
+  background: #112540;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;
@@ -733,11 +749,8 @@ p {
 
   .navbar-collapse {
     background: rgb(239, 238, 244);
-    background: linear-gradient(
-      180deg,
-      rgba(239, 238, 244, 1) 0%,
-      rgba(228, 221, 214, 1) 100%
-    );
+    background: rgb(239, 238, 244);
+    background: rgb(239, 238, 244);
     padding: 10px;
     border-radius: 3px;
   }
@@ -784,5 +797,15 @@ p {
     align-self: flex-start;
     justify-content: flex-start;
     margin: 3rem 0 0 1rem;
+  }
+}
+
+.text-enterprise-desc {
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .text-enterprise-desc {
+    text-align: initial;
   }
 }
