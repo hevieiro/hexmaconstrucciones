@@ -194,6 +194,22 @@ blockquote {
 
 .tm-hero-text-container-inner {
   margin-top: -90px;
+  padding: 55px;
+}
+
+@media (max-width: 700px) {
+  .tm-hero-text-container-inner {
+    padding: 15px;
+  }
+}
+
+.separator {
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: #1be7ff;
+  border-radius: 20px;
+  margin: 50px 0;
 }
 
 .tm-hero-title {
@@ -202,9 +218,26 @@ blockquote {
   text-shadow: 22px 22px 22px #333;
 }
 
+@media (max-width: 700px) {
+  .tm-hero-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 22px 22px 22px #333;
+  }
+}
+
 .tm-hero-subtitle {
   font-weight: 600;
   text-shadow: 2px 2px 2px #333;
+}
+
+@media (max-width: 700px) {
+  .tm-hero-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 22px 22px 22px #333;
+    margin-top: 3rem;
+  }
 }
 
 .tm-intro-next {
@@ -645,6 +678,7 @@ p {
   align-items: center;
   width: 600px;
 }
+
 @media (max-width: 720px) {
   .content-main {
     display: initial;
@@ -731,5 +765,24 @@ p {
 
   .tm-gallery-item {
     margin: 0;
+  }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin: 3rem 0 0 1rem;
   }
 }
