@@ -92,7 +92,7 @@ blockquote {
 }
 
 .tm-navbar.scroll {
-  background-color: white;
+  background-color: black;
   border-bottom: 1px solid #e9ecef;
 }
 
@@ -216,7 +216,7 @@ blockquote {
   height: 3px;
   background: #1be7ff;
   border-radius: 20px;
-  margin: 50px 0;
+  margin: 80px 0;
 }
 
 @media (max-width: 700px) {
@@ -756,7 +756,7 @@ p {
   }
 
   .navbar-collapse .nav-link {
-    color: #707070;
+    color: black;
     padding-right: 20px;
   }
 }
