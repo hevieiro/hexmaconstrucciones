@@ -45,7 +45,7 @@ blockquote {
 }
 
 .tm-section-pad-top {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
@@ -807,5 +807,17 @@ p {
 @media (max-width: 720px) {
   .text-enterprise-desc {
     text-align: initial;
+  }
+}
+
+.info-enterprise {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .info-enterprise {
+    flex-direction: column;
   }
 }
