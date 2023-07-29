@@ -100,6 +100,7 @@ blockquote {
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
+  margin-left: 50px;
 }
 
 .navbar-brand:hover,
@@ -120,7 +121,8 @@ blockquote {
 }
 
 .tm-navbar.scroll .tm-nav-link {
-  color: #18cee3;
+  color: white;
+  /* margin-left: 100px; */
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
@@ -748,15 +750,15 @@ p {
   }
 
   .navbar-collapse {
-    background: rgb(239, 238, 244);
-    background: rgb(239, 238, 244);
-    background: rgb(239, 238, 244);
+    background: black;
+    background: black;
+    background: black;
     padding: 10px;
     border-radius: 3px;
   }
 
   .navbar-collapse .nav-link {
-    color: black;
+    color: white;
     padding-right: 20px;
   }
 }
@@ -804,9 +806,26 @@ p {
   text-align: center;
 }
 
+.hide-show-items {
+  transition: color 0.3s ease;
+}
+
+.hide-show-items:hover {
+  color: #38b;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .hide-show-items:hover {
+    text-decoration: none;
+  }
+}
+
 @media (max-width: 720px) {
   .text-enterprise-desc {
     text-align: initial;
+    transition: 1.5s;
   }
 }
 

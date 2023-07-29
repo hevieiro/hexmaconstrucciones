@@ -152,7 +152,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
-                <h2 class="tm-text-primary mb-4">Visión</h2>
+                <h2 class="tm-text-primary mb-4 hide-show-items">Visión</h2>
                 <p
                   style="display: none"
                   id="first-element"
@@ -172,7 +172,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
-                <h2 class="tm-text-primary mb-4">Misión</h2>
+                <h2 class="tm-text-primary mb-4 hide-show-items">Misión</h2>
                 <p
                   style="display: none"
                   id="second-element"
@@ -196,14 +196,14 @@ https://www.tooplate.com/view/2117-infinite-loop
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
-                <h2 class="tm-text-primary mb-4">Valores</h2>
+                <h2 class="tm-text-primary mb-4 hide-show-items">Valores</h2>
                 <p
                   style="display: none"
                   id="third-element"
                   class="mb-4 tm-intro-text text-enterprise-desc"
                 >
                   Liderazgo. Experiencia. Compromiso. Eficiencia. Innovación.
-                  Proactividad. Trabajo en equipo
+                  Proactividad. Trabajo en equipo.
                 </p>
               </div>
             </div>
@@ -889,8 +889,10 @@ https://www.tooplate.com/view/2117-infinite-loop
         // Gallery
         $(".tm-gallery").slick({
           dots: true,
-          infinite: false,
+          infinite: true,
           slidesToShow: 5,
+          autoplay: true,
+          interval: 2500,
           slidesToScroll: 2,
           responsive: [
             {
