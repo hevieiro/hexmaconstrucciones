@@ -94,7 +94,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 Somos una empresa dedicada a la supervisión y ejecución de obras
                 civiles, tanto industriales como de arquitectura.<br />
                 Brindamos servicios de ingeniería estructural, proyectos y
-                renderizado 3D. Tambien podes encontrarnos en
+                renderizado 3D. También podes encontrarnos en
                 <a
                   href="https://www.instagram.com/hexmaconstrucciones/"
                   target="_blank"
@@ -234,8 +234,8 @@ https://www.tooplate.com/view/2117-infinite-loop
               style="position: relative"
               class="mx-auto tm-gallery-container"
             >
-              <div class="arrow-left" id="arrow-left"></div>
-              <div id="arrow-right" class="arrow-right"></div>
+              <div class="next"></div>
+              <div class="prev"></div>
               <div class="grid tm-gallery">
                 <a href="img/gallery-img-01.jpg">
                   <figure class="effect-honey tm-gallery-item">
@@ -373,8 +373,8 @@ https://www.tooplate.com/view/2117-infinite-loop
               style="position: relative"
               class="mx-auto tm-gallery-container"
             >
-              <div class="arrow-left" id="arrow-left"></div>
-              <div id="arrow-right" class="arrow-right"></div>
+              <div class="next"></div>
+              <div class="prev"></div>
               <div class="grid tm-gallery">
                 <a href="img/gallery-img-01.jpg">
                   <figure class="effect-honey tm-gallery-item">
@@ -512,9 +512,8 @@ https://www.tooplate.com/view/2117-infinite-loop
               style="position: relative"
               class="mx-auto tm-gallery-container"
             >
-              <div class="arrow-left" id="arrow-left"></div>
-              <div id="arrow-right" class="arrow-right"></div>
-
+              <div class="next"></div>
+              <div class="prev"></div>
               <div class="grid tm-gallery">
                 <a href="img/gallery-img-01.jpg">
                   <figure class="effect-honey tm-gallery-item">
@@ -926,6 +925,8 @@ https://www.tooplate.com/view/2117-infinite-loop
           autoplay: true,
           interval: 2500,
           slidesToScroll: 2,
+          prevArrow: $(".prev"),
+          nextArrow: $(".next"),
           responsive: [
             {
               breakpoint: 1199,

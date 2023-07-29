@@ -889,3 +889,35 @@ p {
   border-radius: 16px;
   cursor: pointer;
 }
+
+.next {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+  right: 0;
+  top: 42%;
+  transform: translate(50%, -50%);
+  z-index: 100;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.prev {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.prev:hover,
+.next:hover {
+  background: red;
+}
