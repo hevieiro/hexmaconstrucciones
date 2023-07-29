@@ -148,11 +148,16 @@ https://www.tooplate.com/view/2117-infinite-loop
             <!-- third row -->
             <div class="col-lg-5">
               <div
+                id="vision-div"
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
                 <h2 class="tm-text-primary mb-4">Visión</h2>
-                <p class="mb-4 tm-intro-text text-enterprise-desc">
+                <p
+                  style="display: none"
+                  id="first-element"
+                  class="mb-4 tm-intro-text text-enterprise-desc"
+                >
                   Ser una empresa líder en el mercado, enfocada en la constante
                   innovación y optimización de proyectos.
                 </p>
@@ -163,11 +168,16 @@ https://www.tooplate.com/view/2117-infinite-loop
             <!-- second row -->
             <div class="col-lg-5">
               <div
+                id="mision-div"
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
                 <h2 class="tm-text-primary mb-4">Misión</h2>
-                <p class="mb-4 tm-intro-text text-enterprise-desc">
+                <p
+                  style="display: none"
+                  id="second-element"
+                  class="mb-4 tm-intro-text text-enterprise-desc"
+                >
                   Brindar un servicio de excelencia, otorgando confianza y
                   compromiso a nuestros clientes. <br />
                   Responder eficientemente y de forma personalizada para cada
@@ -182,11 +192,16 @@ https://www.tooplate.com/view/2117-infinite-loop
             <!-- forth row -->
             <div class="col-lg-5">
               <div
+                id="valores-div"
                 style="max-width: 400px"
                 class="content-main tm-intro-text-container"
               >
                 <h2 class="tm-text-primary mb-4">Valores</h2>
-                <p class="mb-4 tm-intro-text text-enterprise-desc">
+                <p
+                  style="display: none"
+                  id="third-element"
+                  class="mb-4 tm-intro-text text-enterprise-desc"
+                >
                   Liderazgo. Experiencia. Compromiso. Eficiencia. Innovación.
                   Proactividad. Trabajo en equipo
                 </p>
@@ -711,6 +726,43 @@ https://www.tooplate.com/view/2117-infinite-loop
 
         window.location.href = mailtoLink;
       }
+
+      const clickableDivOne = document.getElementById("vision-div");
+      const hiddenTagOne = document.getElementById("first-element");
+
+      clickableDivOne.addEventListener("click", function () {
+        // Mostrar u ocultar el tag alternadamente basado en el valor de style.display
+        if (hiddenTagOne.style.display === "none") {
+          hiddenTagOne.style.display = "block";
+        } else {
+          hiddenTagOne.style.display = "none";
+        }
+      });
+
+      const clickableDivTwo = document.getElementById("mision-div");
+      const hiddenTagTwo = document.getElementById("second-element");
+
+      clickableDivTwo.addEventListener("click", function () {
+        // Mostrar u ocultar el tag alternadamente basado en el valor de style.display
+        if (hiddenTagTwo.style.display === "none") {
+          hiddenTagTwo.style.display = "block";
+        } else {
+          hiddenTagTwo.style.display = "none";
+        }
+      });
+
+      const clickableDivThree = document.getElementById("valores-div");
+      const hiddenTagThree = document.getElementById("third-element");
+
+      clickableDivThree.addEventListener("click", function () {
+        // Mostrar u ocultar el tag alternadamente basado en el valor de style.display
+        if (hiddenTagThree.style.display === "none") {
+          hiddenTagThree.style.display = "block";
+        } else {
+          hiddenTagThree.style.display = "none";
+        }
+      });
+
       function getOffSet() {
         var _offset = 450;
         var windowHeight = window.innerHeight;
