@@ -19,6 +19,9 @@ https://www.tooplate.com/view/2117-infinite-loop
   <body>
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
+      <div id="instragram-logo" class="fixed-container">ICONO IG</div>
+      <div id="wasap-logo" class="fixed-container-bottom">ICONO WSP</div>
+
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
         <div class="container">
@@ -650,6 +653,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 rows="8"
                 placeholder="Mensaje"
                 class="tm-input"
+                style="min-height: 100px; max-height: 300px"
                 required
               ></textarea>
               <button type="submit" class="btn tm-btn-submit">Enviar</button>
@@ -726,6 +730,18 @@ https://www.tooplate.com/view/2117-infinite-loop
 
         window.location.href = mailtoLink;
       }
+
+      const instagramDiv = document.getElementById("instragram-logo");
+      // Click  en el logo de isntagram
+      instagramDiv.addEventListener("click", () => {
+        alert("toma tu castigo");
+      });
+
+      const wasapDiv = document.getElementById("wasap-logo");
+      // Click  en el logo de wasap
+      wasapDiv.addEventListener("click", () => {
+        alert("toma tu castigo");
+      });
 
       const clickableDivOne = document.getElementById("vision-div");
       const hiddenTagOne = document.getElementById("first-element");

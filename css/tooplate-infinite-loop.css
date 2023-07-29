@@ -839,3 +839,28 @@ p {
     flex-direction: column;
   }
 }
+
+.fixed-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: red;
+  cursor: pointer;
+}
+
+.fixed-container-bottom {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 1000;
+  background: red;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .fixed-container,
+  .fixed-container-bottom {
+    display: none;
+  }
+}
