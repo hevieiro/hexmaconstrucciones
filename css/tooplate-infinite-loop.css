@@ -730,7 +730,7 @@ p {
     }
   }
 
-  c .tm-intro-img {
+  .tm-intro-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -863,4 +863,29 @@ p {
   .fixed-container-bottom {
     display: none;
   }
+}
+
+.arrow-left {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.arrow-right {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  right: 0;
+  top: 42%;
+  transform: translate(50%, -50%);
+  z-index: 100;
+  border-radius: 16px;
+  cursor: pointer;
 }
