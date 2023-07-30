@@ -870,7 +870,6 @@ p {
 .next-primary {
   width: 100px;
   height: 100px;
-  background: blue;
   position: absolute;
   right: 0;
   top: 42%;
@@ -879,6 +878,9 @@ p {
   border-radius: 16px;
   cursor: pointer;
   transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .prev-terciary,
@@ -886,7 +888,6 @@ p {
 .prev-primary {
   width: 100px;
   height: 100px;
-  background: blue;
   position: absolute;
   top: 42%;
   transform: translate(-50%, -50%);
@@ -894,6 +895,9 @@ p {
   border-radius: 16px;
   cursor: pointer;
   transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @media (max-width: 720px) {
@@ -908,4 +912,8 @@ p {
   .prev-primary {
     display: none;
   }
+}
+
+.arrow-icon {
+  transform: rotate(180deg);
 }
