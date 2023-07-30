@@ -917,3 +917,10 @@ p {
 .arrow-icon {
   transform: rotate(180deg);
 }
+
+@media (max-width: 720px) {
+  .arrow-icon,
+  .arrow-icon-right {
+    display: none;
+  }
+}
