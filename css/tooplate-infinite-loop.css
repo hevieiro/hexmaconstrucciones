@@ -937,3 +937,10 @@ p {
   width: 65px;
   height: 65px;
 }
+
+@media (max-width: 720px) {
+  .icon-wsp,
+  .icon-ig {
+    display: none;
+  }
+}

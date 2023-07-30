@@ -29,10 +29,24 @@ https://www.tooplate.com/view/2117-infinite-loop
     <!-- Hero section -->
     <section id="infinite" class="text-white tm-font-big tm-parallax">
       <div id="instragram-logo" class="fixed-container">
-        <img class="icon-ig" src="img/Instagram-Icon.png" alt="wsp-icon" />
+        <a
+          rel="nofollow"
+          href="https://www.instagram.com/hexmaconstrucciones/"
+          class="item-link"
+          target="_blank"
+        >
+          <img class="icon-ig" src="img/Instagram-Icon.png" alt="wsp-icon" />
+        </a>
       </div>
       <div id="wasap-logo" class="fixed-container-bottom">
-        <img class="icon-wsp" src="img/WhatsApp_icon.png" alt="wsp-icon" />
+        <a
+          rel="nofollow"
+          href="https://api.whatsapp.com/send?phone=5491125253434"
+          target="_blank"
+          class="item-link"
+        >
+          <img class="icon-wsp" src="img/WhatsApp_icon.png" alt="wsp-icon" />
+        </a>
       </div>
 
       <!-- Navigation -->
@@ -798,13 +812,13 @@ https://www.tooplate.com/view/2117-infinite-loop
       const instagramDiv = document.getElementById("instragram-logo");
       // Click  en el logo de isntagram
       instagramDiv.addEventListener("click", () => {
-        alert("toma tu castigo");
+        return;
       });
 
       const wasapDiv = document.getElementById("wasap-logo");
       // Click  en el logo de wasap
       wasapDiv.addEventListener("click", () => {
-        alert("toma tu castigo");
+        return;
       });
 
       const clickableDivOne = document.getElementById("vision-div");
