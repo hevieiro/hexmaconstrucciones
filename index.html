@@ -800,18 +800,6 @@ https://www.tooplate.com/view/2117-infinite-loop
         window.location.href = mailtoLink;
       }
 
-      const instagramDiv = document.getElementById("instragram-logo");
-      // Click  en el logo de isntagram
-      instagramDiv.addEventListener("click", () => {
-        return;
-      });
-
-      const wasapDiv = document.getElementById("wasap-logo");
-      // Click  en el logo de wasap
-      wasapDiv.addEventListener("click", () => {
-        return;
-      });
-
       const clickableDivOne = document.getElementById("vision-div");
       const hiddenTagOne = document.getElementById("first-element");
 
@@ -964,8 +952,20 @@ https://www.tooplate.com/view/2117-infinite-loop
           } // End if
         });
 
-        // Pop up
-        $(".tm-gallery").magnificPopup({
+        // Pop up de las imágenes cuando clickeas
+        $(".tm-gallery-terciary").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: { enabled: true },
+        });
+
+        $(".tm-gallery-secondary").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: { enabled: true },
+        });
+
+        $(".tm-gallery-primary").magnificPopup({
           delegate: "a",
           type: "image",
           gallery: { enabled: true },

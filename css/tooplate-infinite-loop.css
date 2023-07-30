@@ -127,7 +127,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #fff;
+  color: black;
   background-color: #18cee3;
   border-radius: 3px;
 }
