@@ -82,7 +82,6 @@ blockquote {
 }
 
 /* Navbar */
-
 .tm-navbar {
   position: fixed;
   width: 100%;
@@ -117,11 +116,11 @@ blockquote {
 
 .tm-nav-link {
   color: white;
+  margin-left: 15px;
 }
 
 .tm-navbar.scroll .tm-nav-link {
   color: white;
-  /* margin-left: 100px; */
 }
 
 .tm-navbar.scroll .tm-nav-link:hover,
