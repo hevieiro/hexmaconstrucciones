@@ -83,7 +83,7 @@ blockquote {
 
 /* Navbar */
 .tm-navbar {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   z-index: 1000;
   background-color: transparent;
@@ -169,7 +169,7 @@ blockquote {
 
 @media (min-height: 830px) {
   #infinite {
-    background-position: center -210px;
+    background-position: center -180px;
   }
 }
 

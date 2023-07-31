@@ -847,7 +847,7 @@ https://www.tooplate.com/view/2117-infinite-loop
           _offset = 300;
         }
         if (windowHeight > 830) {
-          _offset = 210;
+          _offset = 180;
         }
 
         return _offset;
@@ -877,31 +877,9 @@ https://www.tooplate.com/view/2117-infinite-loop
         }
       };
 
-      var background_image_parallax_2 = function ($object, multiplier) {
-        multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({ "background-attachment": "fixed" });
-
-        $(window).scroll(function () {
-          if ($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-              pos = $(window).scrollTop(),
-              yPos = Math.round(multiplier * (firstTop - pos) - 186);
-
-            var bg_css = "center " + yPos + "px";
-
-            $object.css({ "background-position": bg_css });
-          } else {
-            $object.css({ "background-position": "center" });
-          }
-        });
-      };
-
       $(function () {
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.3, false);
-        background_image_parallax_2($("#contact"), 0.8);
 
         // Handle window resize
         window.addEventListener(
