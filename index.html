@@ -930,24 +930,17 @@ https://www.tooplate.com/view/2117-infinite-loop
           } // End if
         });
 
-        // Pop up de las imágenes cuando clickeas
-        $(".tm-gallery-terciary").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: { enabled: true },
-        });
+        function initializeMagnificPopup(selector) {
+          $(selector).magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: { enabled: true },
+          });
+        }
 
-        $(".tm-gallery-secondary").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: { enabled: true },
-        });
-
-        $(".tm-gallery-primary").magnificPopup({
-          delegate: "a",
-          type: "image",
-          gallery: { enabled: true },
-        });
+        initializeMagnificPopup(".tm-gallery-terciary");
+        initializeMagnificPopup(".tm-gallery-secondary");
+        initializeMagnificPopup(".tm-gallery-primary");
 
         // Gallery
         $(".tm-gallery-terciary").slick({
