@@ -943,128 +943,64 @@ https://www.tooplate.com/view/2117-infinite-loop
         initializeMagnificPopup(".tm-gallery-primary");
 
         // Gallery
-        $(".tm-gallery-terciary").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 5,
-          autoplay: true,
-          interval: 2500,
-          slidesToScroll: 2,
-          prevArrow: $(".prev-terciary"),
-          nextArrow: $(".next-terciary"),
-          responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
+        function initializeSlickSlider(selector, prevArrow, nextArrow) {
+          $(selector).slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 5,
+            autoplay: true,
+            interval: 2500,
+            slidesToScroll: 2,
+            prevArrow: prevArrow,
+            nextArrow: nextArrow,
+            responsive: [
+              {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2,
+                },
               },
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
+              {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+                },
               },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                },
               },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
               },
-            },
-          ],
-        });
+            ],
+          });
+        }
 
-        $(".tm-gallery-secondary").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 5,
-          autoplay: true,
-          interval: 2500,
-          slidesToScroll: 2,
-          prevArrow: $(".prev-secondary"),
-          nextArrow: $(".next-secondary"),
-          responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-
-        $(".tm-gallery-primary").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 5,
-          autoplay: true,
-          interval: 2500,
-          slidesToScroll: 2,
-          prevArrow: $(".prev-primary"),
-          nextArrow: $(".next-primary"),
-          responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
+        initializeSlickSlider(
+          ".tm-gallery-terciary",
+          $(".prev-terciary"),
+          $(".next-terciary")
+        );
+        initializeSlickSlider(
+          ".tm-gallery-secondary",
+          $(".prev-secondary"),
+          $(".next-secondary")
+        );
+        initializeSlickSlider(
+          ".tm-gallery-primary",
+          $(".prev-primary"),
+          $(".next-primary")
+        );
       });
     </script>
   </body>
