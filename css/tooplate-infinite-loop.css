@@ -781,25 +781,6 @@ p {
   }
 }
 
-.contact-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-self: center;
-  margin-top: 5rem;
-  width: 100%;
-}
-
-@media (max-width: 720px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start;
-    justify-content: flex-start;
-    margin: 3rem 0 0 1rem;
-  }
-}
-
 .text-enterprise-desc {
   text-align: center;
 }
@@ -942,4 +923,46 @@ p {
   .icon-ig {
     display: none;
   }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin: 3rem 0 0 1rem;
+  }
+}
+
+.icon-ig-footer,
+.icon-mail-footer {
+  filter: brightness(0) invert(1);
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+@media (max-width: 720px) {
+  .icon-ig-footer,
+  .icon-mail-footer {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.icon-wsp-footer {
+  filter: brightness(0) invert(1);
+  width: 45px;
+  height: 45px;
+  transform: translate(-10px);
 }
