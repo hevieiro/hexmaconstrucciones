@@ -827,9 +827,10 @@ p {
   }
 }
 
-.next-terciary,
-.next-secondary,
-.next-primary {
+.next-one,
+.next-two,
+.next-tree,
+.next-four {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -845,9 +846,10 @@ p {
   justify-content: flex-end;
 }
 
-.prev-terciary,
-.prev-secondary,
-.prev-primary {
+.prev-one,
+.prev-two,
+.prev-tree,
+.prev-four {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -863,15 +865,17 @@ p {
 }
 
 @media (max-width: 720px) {
-  .next-terciary,
-  .next-secondary,
-  .next-primary {
+  .next-one,
+  .next-two,
+  .next-tree,
+  .next-four {
     display: none;
   }
 
-  .prev-terciary,
-  .prev-secondary,
-  .prev-primary {
+  .prev-one,
+  .prev-two,
+  .prev-tree,
+  .prev-four {
     display: none;
   }
 }
@@ -947,8 +951,8 @@ p {
 .icon-ig-footer,
 .icon-mail-footer {
   filter: brightness(0) invert(1);
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
