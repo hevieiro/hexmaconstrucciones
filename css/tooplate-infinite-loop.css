@@ -92,7 +92,7 @@ blockquote {
 
 .tm-navbar.scroll {
   background-color: black;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid black;
 }
 
 .navbar-brand {
@@ -495,7 +495,7 @@ blockquote {
 /*---------------*/
 
 figure.effect-honey {
-  background: #4a3753;
+  background: #a9c7e6; /*aca podemos cambiar el hover de las fotos de los carrousel*/
   max-width: 220px;
 }
 
@@ -556,7 +556,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-container-gallery {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 /* Contact */
