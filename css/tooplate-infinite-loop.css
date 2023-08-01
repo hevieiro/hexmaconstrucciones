@@ -379,16 +379,16 @@ blockquote {
 }
 
 .tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .tm-gallery-item {
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .slick-dots {
-  bottom: -65px;
+  bottom: -40px;
 }
 
 .slick-dots li {
@@ -556,7 +556,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-container-gallery {
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 /* Contact */
