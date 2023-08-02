@@ -47,6 +47,8 @@ blockquote {
 .tm-section-pad-top {
   padding-top: 30px;
   padding-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 700px) {
@@ -221,7 +223,7 @@ blockquote {
 
 @media (max-width: 700px) {
   .separator {
-    margin: 10px 0;
+    margin: 5px 0;
     height: 1.5px;
   }
 }
@@ -496,7 +498,7 @@ blockquote {
 
 figure.effect-honey {
   background: #a9c7e6; /*aca podemos cambiar el hover de las fotos de los carrousel*/
-  max-width: 220px;
+  /* max-width: 220px; */
 }
 
 figure.effect-honey img {
@@ -789,15 +791,13 @@ p {
   transition: color 0.3s ease;
 }
 
-.hide-show-items:hover {
-  color: #38b;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 @media (max-width: 720px) {
-  .hide-show-items:hover {
+  .hide-show-items {
     text-decoration: none;
+  }
+
+  .mision-vision-valores {
+    display: none;
   }
 }
 
