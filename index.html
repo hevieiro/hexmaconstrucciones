@@ -636,7 +636,6 @@ https://www.tooplate.com/view/2117-infinite-loop
                     />
                   </figure>
                 </a>
-                
               </div>
             </div>
           </div>
@@ -647,91 +646,180 @@ https://www.tooplate.com/view/2117-infinite-loop
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
       <div class="container tm-container-contact">
-        <div class="column">
-          <div class="text-center col-12">
-            <h2 class="tm-section-title mb-4">CONTACTO</h2>
-            <p class="mb-5">Para más información déjanos tus datos y nos contactaremos a la brevedad.</p>
-            <br />
+        <div class="text-center col-12">
+          <h2 class="tm-section-title mb-4">CONTACTO</h2>
+          <p class="mb-5">
+            Para más información déjanos tus datos y nos contactaremos a la
+            brevedad.
+          </p>
+          <br />
+        </div>
+
+        <div class="contact-bottom-container">
+          <div class="container-section-footer">
+            <form onsubmit="composeMail(event)">
+              <div class="input-group">
+                <div class="half-column" style="width: 50%">
+                  <label for="nombre">Nombre y apellido:</label>
+                  <input
+                    id="nombre"
+                    name="Nombre"
+                    type="text"
+                    placeholder=""
+                    class="tm-input"
+                    required
+                  />
+                </div>
+                <div class="half-column" style="width: 45%">
+                  <label for="localidad">Localidad:</label>
+                  <input
+                    id="localidad"
+                    name="Localidad"
+                    type="text"
+                    placeholder=""
+                    class="tm-input"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="subject">Teléfono:</label>
+                <input
+                  id="subject"
+                  name="Teléfono"
+                  type="text"
+                  placeholder=""
+                  class="tm-input"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="subject">Teléfono:</label>
+                <input
+                  id="subject"
+                  name="Teléfono"
+                  type="text"
+                  placeholder=""
+                  class="tm-input"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="message">Mensaje:</label>
+                <textarea
+                  id="message"
+                  name="Mensaje"
+                  rows="8"
+                  placeholder=""
+                  class="tm-input"
+                  style="min-height: 100px; max-height: 300px; height: 150px"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn tm-btn-submit"
+                style="margin-bottom: 0"
+              >
+                Enviar
+              </button>
+            </form>
           </div>
 
-          <div style="display: flex; flex-direction: row; gap: 20px; flex-wrap: wrap;  ">
-            <div  style="padding: 30px;background-color: rgba(255, 255, 255, 0.25); width: 45%;">
-              <form onsubmit="composeMail(event)">
-                <div class="input-group" >
-                  <div class="half-column" style="width: 50%;">
-                      <label for="nombre">Nombre y apellido:</label>
-                      <input id="nombre" name="Nombre" type="text" placeholder="" class="tm-input" required />
-                  </div>
-                  <div class="half-column" style="width: 45%;">
-                      <label for="localidad">Localidad:</label>
-                      <input id="localidad" name="Localidad" type="text" placeholder="" class="tm-input" required />
-                  </div>
-                </div>
-                  <div class="input-group">
-                    <label for="subject">Teléfono:</label>
-                    <input id="subject" name="Teléfono" type="text" placeholder="" class="tm-input" required />
-                </div>
-              
-                <div class="input-group">
-                    <label for="subject">Teléfono:</label>
-                    <input id="subject" name="Teléfono" type="text" placeholder="" class="tm-input" required />
-                </div>
-                <div class="input-group">
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="Mensaje" rows="8" placeholder="" class="tm-input" style="min-height: 100px; max-height: 300px; height: 150px;" required></textarea>
-                </div>
-                <button type="submit" class="btn tm-btn-submit" style="margin-bottom:0">Enviar</button>
-            </form>
+          <div class="container-section-footer">
+            <!-- Whatsap -->
+            <div class="contact-item">
+              <a
+                rel="nofollow"
+                href="https://api.whatsapp.com/send?phone=5491125253434"
+                target="_blank"
+                class="item-link"
+              >
+                <img
+                  class="icon-wsp-footer"
+                  src="img/Iconos contacto/Whatsapp_icon-contact.png"
+                  alt="mail-icon"
+                />
+                <span class="text-bottom-style">+549-11-22334455</span>
+              </a>
             </div>
-
-
-          <!--  <div class="spacer" style="width: 20px; "></div> Espacio en el medio -->
-
-
-            <div style="padding: 30px;background-color: rgba(255, 255, 255, 0.25);width: 45%;">
-              <!-- Whatsap -->
-              <div class="contact-item"> 
-                <a rel="nofollow" href="https://api.whatsapp.com/send?phone=5491125253434" target="_blank" class="item-link" >
-                  <img class="icon-wsp-footer" src="img/Iconos contacto/Whatsapp_icon-contact.png" alt="mail-icon" />
-                  <span class="text-bottom-style">+549-11-22334455</span>
-                </a>
-              </div>
-              <!-- Instagram -->
-              <div class="contact-item">
-                <a style="margin-bottom: 10px" rel="nofollow" href="https://www.instagram.com/hexmaconstrucciones/" class="item-link">
-                  <img class="icon-ig-footer" src="img/Iconos contacto/Instagram-Icon-contact.png"  alt="ig-icon"/>
-                  <span class="mb-0">HexmaConstrucciones</span>
-                </a>
-              </div>
-              <!-- Mail -->
-              <div class="contact-item">
-                <a rel="nofollow" href="mailto:hexma@gmail.com" class="item-link">
-                  <img class="icon-mail-footer" src="img/Iconos contacto/Mail_icon-contact2.png"  alt="wsp-icon"/>
-                  <span class="mb-0">hexma@gmail.com</span>
-                </a>
-              </div>
-              <!-- Facebook -->
-              <div class="contact-item">
-                <a style="margin-bottom: 10px" rel="nofollow" href="https://www.instagram.com/hexmaconstrucciones/" class="item-link">
-                  <img class="icon-ig-footer" src="img/Iconos contacto/Facebook_icon-contact2.png"  alt="ig-icon"/>
-                  <span class="mb-0">Hexma construcciones</span>
-                </a>
-              </div>
-              <!-- Linkedin -->
-              <div class="contact-item">
-                <a style="margin-bottom: 10px" rel="nofollow" href="https://www.instagram.com/hexmaconstrucciones/" class="item-link">
-                  <img class="icon-ig-footer" src="img/Iconos contacto/Linkedin_icon-contact.png"  alt="ig-icon"/>
-                  <span class="mb-0">Hexma construcciones</span>
-                </a>
-              </div>
-              <!-- Maps -->
-              <div class="contact-item">
-                <a style="margin-bottom: 10px" rel="nofollow" href="https://www.instagram.com/hexmaconstrucciones/" class="item-link">
-                  <img class="icon-ig-footer" src="img/Iconos contacto/Maps_icon-contact.png"  alt="ig-icon"/>
-                  <span class="mb-0">Nicolas Repetto 1177, CABA</span>
-                </a>
-              </div>
-              <!-- <div class="map-responsive">
+            <!-- Instagram -->
+            <div class="contact-item">
+              <a
+                style="margin-bottom: 10px"
+                rel="nofollow"
+                href="https://www.instagram.com/hexmaconstrucciones/"
+                class="item-link"
+              >
+                <img
+                  class="icon-ig-footer"
+                  src="img/Iconos contacto/Instagram-Icon-contact.png"
+                  alt="ig-icon"
+                />
+                <span class="mb-0">HexmaConstrucciones</span>
+              </a>
+            </div>
+            <!-- Mail -->
+            <div class="contact-item">
+              <a rel="nofollow" href="mailto:hexma@gmail.com" class="item-link">
+                <img
+                  class="icon-mail-footer"
+                  src="img/Iconos contacto/Mail_icon-contact2.png"
+                  alt="wsp-icon"
+                />
+                <span class="mb-0">hexma@gmail.com</span>
+              </a>
+            </div>
+            <!-- Facebook -->
+            <div class="contact-item">
+              <a
+                style="margin-bottom: 10px"
+                rel="nofollow"
+                href="https://www.instagram.com/hexmaconstrucciones/"
+                class="item-link"
+              >
+                <img
+                  class="icon-ig-footer"
+                  src="img/Iconos contacto/Facebook_icon-contact2.png"
+                  alt="ig-icon"
+                />
+                <span class="mb-0">Hexma construcciones</span>
+              </a>
+            </div>
+            <!-- Linkedin -->
+            <div class="contact-item">
+              <a
+                style="margin-bottom: 10px"
+                rel="nofollow"
+                href="https://www.instagram.com/hexmaconstrucciones/"
+                class="item-link"
+              >
+                <img
+                  class="icon-ig-footer"
+                  src="img/Iconos contacto/Linkedin_icon-contact.png"
+                  alt="ig-icon"
+                />
+                <span class="mb-0">Hexma construcciones</span>
+              </a>
+            </div>
+            <!-- Maps -->
+            <div class="contact-item">
+              <a
+                style="margin-bottom: 10px"
+                rel="nofollow"
+                href="https://www.instagram.com/hexmaconstrucciones/"
+                class="item-link"
+              >
+                <img
+                  class="icon-ig-footer"
+                  src="img/Iconos contacto/Maps_icon-contact.png"
+                  alt="ig-icon"
+                />
+                <span class="mb-0">Nicolas Repetto 1177, CABA</span>
+              </a>
+            </div>
+            <!-- <div class="map-responsive">
                 <iframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=-34.60847106463216, -58.45068015051428"
                   width="600"
@@ -741,11 +829,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   allowfullscreen
                 ></iframe>
               </div> -->
-              
-            </div>
           </div>
-
-          
         </div>
         <!-- row ending -->
       </div>

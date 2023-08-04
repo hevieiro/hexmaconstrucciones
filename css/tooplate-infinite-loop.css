@@ -970,3 +970,23 @@ p {
   height: 45px;
   transform: translate(-10px);
 }
+
+.contact-bottom-container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 720px) {
+  .contact-bottom-container {
+    flex-direction: column;
+  }
+}
+
+.container-section-footer {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 100%;
+}
