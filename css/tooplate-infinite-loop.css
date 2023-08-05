@@ -7,9 +7,10 @@ https://www.tooplate.com/view/2117-infinite-loop
 */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900");
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   color: #707070;
   margin: 0;
@@ -156,7 +157,7 @@ blockquote {
 
 #infinite {
   background-color: #222;
-  background-image: url(../img/peakpx.jpg);
+  background-image: url(../img/main-background.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -567,8 +568,9 @@ figure.effect-honey:hover h2 i {
 #contact {
   color: white;
   background-color: #001828;
-  /* background-image: url(../img/footer-image4.jpg); */
-  background: #112540;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),url(../img/Contact-background.jpg);
+  /*background: #112540;*/
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 980px;
@@ -728,6 +730,7 @@ p {
 
     .tm-container-contact {
       max-width: 1063px;
+      
     }
   }
 
@@ -984,9 +987,7 @@ p {
 
 .container-section-footer {
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.25);
-  width: 100%;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
 }
+
