@@ -48,8 +48,8 @@ https://www.tooplate.com/view/2117-infinite-loop
             <a href="#infinite" class="navbar-brand">
               <img
                 src="img/HexmaConstrucciones.png"
-                height="50px"
                 href="#infinite"
+                class="navbar-logo"
             /></a>
           </div>
 
@@ -879,8 +879,10 @@ https://www.tooplate.com/view/2117-infinite-loop
         $(window).scroll(function (e) {
           if ($(document).scrollTop() > 120) {
             $(".tm-navbar").addClass("scroll");
+            $(".navbar-logo").addClass("scroll");
           } else {
             $(".tm-navbar").removeClass("scroll");
+            $(".navbar-logo").removeClass("scroll");
           }
         });
 
