@@ -103,9 +103,15 @@ blockquote {
   height: 50px;
 }
 .navbar-logo.scroll{
-  height: 30px;
+  height: 40px;
 }
 
+@media (max-width: 720px) {
+  .tm-navbar.scroll{
+    height: 60px;
+  }
+
+}
 
 .navbar-brand {
   color: white;
@@ -115,6 +121,7 @@ blockquote {
 .navbar-brand.scroll{
   height: 20px;
 }
+
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
@@ -159,10 +166,12 @@ blockquote {
 
 .tm-navbar.scroll .navbar-toggler {
   border: 1px solid #707070;
+  padding-bottom:4px;
 }
 
 .tm-navbar.scroll .navbar-toggler-icon {
   color: #707070;
+  padding-bottom:4px;
 }
 
 /* Hero */
@@ -909,15 +918,15 @@ p {
 .fixed-container {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
   z-index: 1000;
   cursor: pointer;
 }
 
 .fixed-container-bottom {
   position: fixed;
-  bottom: 120px;
-  right: 15px;
+  bottom: 80px;
+  right: 14px;
   z-index: 1000;
   cursor: pointer;
   width: 80px;
@@ -928,13 +937,13 @@ p {
 }
 
 .icon-wsp {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .icon-ig {
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 720px) {
@@ -1003,3 +1012,16 @@ p {
   width: 100%;
 }
 
+.half-column{
+  width: 47%;
+}
+
+@media (max-width: 720px) {
+  .contact-name-local {
+    display: flex;
+    flex-direction: column;
+  }
+  .half-column{
+    width: 100%;
+  }
+}
