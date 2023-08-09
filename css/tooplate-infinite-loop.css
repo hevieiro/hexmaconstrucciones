@@ -1148,7 +1148,7 @@ p {
 .carousel__slide img {
   display: block;
   flex: 1 1 auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 .carousel__slide figcaption {
   align-self: flex-end;
