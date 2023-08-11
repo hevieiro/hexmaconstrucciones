@@ -87,22 +87,13 @@ https://www.tooplate.com/view/2117-infinite-loop
           </div>
         </div>
       </nav>
-      <div
-        style="
-          width: fit-content;
-          height: 100px;
-          position: absolute;
-          top: 300px;
-          left: 300px;
-        "
-      >
+      <div class="logo-infinite-container">
         <img
           src="img/HexmaConstrucciones.png"
           href="#infinite"
-          class="navbar-logo"
-          style="width: 500px; height: 200px"
+          class="navbar-logo-infinite"
         />
-        <p style="font-size: 25px; font-weight: 500">
+        <p class="subtitle-infinite-logo">
           Calidad y excelencia en la construcción
         </p>
       </div>
@@ -815,7 +806,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   rows="8"
                   placeholder=""
                   class="tm-input"
-                  style="min-height: 50px; max-height: 300px; height: 100px"
+                  style="min-height: 50px; max-height: 300px; height: 150px"
                   required
                 ></textarea>
               </div>
@@ -831,7 +822,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 
           <div class="container-section-footer">
             <!-- Whatsap -->
-            <div class="contact-item">
+            <div class="contact-item contact-wsp">
               <a
                 rel="nofollow"
                 href="https://api.whatsapp.com/send?phone=5491125253434"
@@ -841,7 +832,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 <img
                   class="icon-wsp-footer"
                   src="img/Iconos contacto/Whatsapp_icon-contact.png"
-                  alt="mail-icon"
+                  alt="mail-icon "
                 />
                 <span class="text-bottom-style">+549-11-22334455</span>
               </a>
@@ -918,23 +909,13 @@ https://www.tooplate.com/view/2117-infinite-loop
                 target="_blank"
               >
                 <img
-                  class="icon-ig-footer"
+                  class="icon-ig-footer direction-footer"
                   src="img/Iconos contacto/Maps_icon-contact.png"
                   alt="ig-icon"
                 />
                 <span class="mb-0">Nicolas Repetto 1177, CABA</span>
               </a>
             </div>
-            <!-- <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=-34.60847106463216, -58.45068015051428"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0; width: 100%;height: 90%; border-radius: 10px"
-                  allowfullscreen
-                ></iframe>
-              </div> -->
           </div>
         </div>
         <!-- row ending -->
@@ -1070,74 +1051,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         initializeMagnificPopup(".tm-gallery-primary");
         initializeMagnificPopup(".tm-gallery-secondary");
         initializeMagnificPopup(".tm-gallery-terciary");
-        initializeMagnificPopup(".tm-gallery-four");
-
-        // Gallery
-        function initializeSlickSlider(selector, prevArrow, nextArrow) {
-          $(selector).slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 3,
-            autoplay: true,
-            interval: 2500,
-            slidesToScroll: 2,
-            prevArrow: prevArrow,
-            nextArrow: nextArrow,
-            responsive: [
-              {
-                breakpoint: 1199,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                },
-              },
-              {
-                breakpoint: 991,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 2,
-                },
-              },
-              {
-                breakpoint: 767,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                },
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                },
-              },
-            ],
-          });
-        }
-        initializeSlickSlider(
-          ".tm-gallery-primary",
-          $(".prev-one"),
-          $(".next-one")
-        );
-
-        initializeSlickSlider(
-          ".tm-gallery-secondary",
-          $(".prev-two"),
-          $(".next-two")
-        );
-
-        initializeSlickSlider(
-          ".tm-gallery-terciary",
-          $(".prev-tree"),
-          $(".next-tree")
-        );
-
-        initializeSlickSlider(
-          ".tm-gallery-four",
-          $(".prev-four"),
-          $(".next-four")
-        );
+        initializeMagnificPopup(".carousel");
       });
     </script>
   </body>
