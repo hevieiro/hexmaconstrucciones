@@ -875,13 +875,6 @@ p {
   }
 }
 
-@media (max-width: 720px) {
-  .fixed-container,
-  .fixed-container-bottom {
-    display: none;
-  }
-}
-
 .next-one,
 .next-two,
 .next-tree,
@@ -967,6 +960,19 @@ p {
   align-items: center;
 }
 
+@media (max-width: 720px) {
+  .fixed-container {
+    display: none;
+  }
+
+  .fixed-container-bottom {
+    bottom: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .icon-wsp {
   width: 60px;
   height: 60px;
@@ -975,13 +981,6 @@ p {
 .icon-ig {
   width: 50px;
   height: 50px;
-}
-
-@media (max-width: 720px) {
-  .icon-wsp,
-  .icon-ig {
-    display: none;
-  }
 }
 
 .contact-container {
