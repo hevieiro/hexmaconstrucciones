@@ -1015,11 +1015,35 @@ p {
   }
 }
 
-.container-section-footer {
+.container-section-footer-left {
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
   height: 550px;
+}
+
+.container-section-footer-right {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+}
+
+@media (max-width: 720px) {
+  .contact-bottom-container {
+    flex-direction: column;
+  }
+
+  .container-section-footer-left {
+    height: initial;
+  }
+
+  .container-section-footer-right {
+    height: 430px;
+  }
 }
 
 .half-column {
