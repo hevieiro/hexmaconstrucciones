@@ -618,7 +618,6 @@ figure.effect-honey:hover h2 i {
 
 .contact-item {
   margin-left: 20px;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 777px) {
@@ -1020,6 +1019,7 @@ p {
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
+  height: 550px;
 }
 
 .half-column {
