@@ -854,6 +854,10 @@ p {
   .mision-vision-valores {
     display: none;
   }
+
+  .hide-separator {
+    display: none;
+  }
 }
 
 @media (max-width: 720px) {
