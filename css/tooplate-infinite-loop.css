@@ -102,6 +102,7 @@ blockquote {
 .navbar-logo {
   height: 50px;
 }
+
 .navbar-logo.scroll {
   height: 40px;
 }
@@ -133,11 +134,15 @@ blockquote {
 
 .nav-item {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .tm-nav-link {
   color: white;
   margin-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .tm-navbar.scroll .tm-nav-link {
@@ -150,6 +155,31 @@ blockquote {
   color: black;
   background-color: #18cee3;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.tm-nav-link.scroll {
+  height: 35px;
+}
+
+@media (max-width: 720px) {
+  .tm-navbar.scroll .tm-nav-link:hover,
+  .tm-navbar.scroll .tm-nav-link.current,
+  .tm-nav-link:hover {
+    display: block;
+  }
+  .nav-item {
+    display: block;
+  }
+
+  .tm-nav-link {
+    display: block;
+  }
+
+  .tm-nav-link.scroll {
+    height: initial;
+  }
 }
 
 .navbar-toggler {

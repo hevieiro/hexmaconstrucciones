@@ -3788,7 +3788,6 @@ input[type="submit"].btn-block {
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    height: 50px;
   }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
