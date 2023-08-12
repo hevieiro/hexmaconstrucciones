@@ -52,6 +52,10 @@ blockquote {
   align-items: center;
 }
 
+.padding {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 700px) {
   .tm-section-pad-top {
     padding-top: 30px;
@@ -606,10 +610,6 @@ figure.effect-honey:hover h2 i {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}
-
-.tm-container-gallery {
-  padding-top: 5px;
 }
 
 /* Contact */
