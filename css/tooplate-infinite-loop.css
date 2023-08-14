@@ -1108,7 +1108,16 @@ p {
   overflow: hidden;
   padding: 0;
   position: absolute;
+  margin-top: 600px;
 }
+
+@media (max-width: 720px) {
+  .carousel > input{
+    margin-top: 100px;
+  }
+}
+
+
 .carousel
   > input:nth-of-type(6):checked
   ~ .carousel__slides
