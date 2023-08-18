@@ -207,8 +207,6 @@ blockquote {
   padding-bottom: 4px;
 }
 
-/* Hero */
-
 #infinite {
   background-color: #222;
   background-image: url(../img/main-background.jpg);
@@ -216,6 +214,12 @@ blockquote {
   height: 100vh;
   min-height: 375px;
   position: relative;
+}
+
+@media (max-width: 740px) {
+  #infinite {
+    background-image: url(../img/main-background_cell.jpg);
+  }
 }
 
 @media (min-height: 600px) and (min-width: 1920px) {
@@ -1112,11 +1116,10 @@ p {
 }
 
 @media (max-width: 720px) {
-  .carousel > input{
+  .carousel > input {
     margin-top: 100px;
   }
 }
-
 
 .carousel
   > input:nth-of-type(6):checked
