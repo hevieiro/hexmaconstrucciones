@@ -214,9 +214,13 @@ blockquote {
   height: 100vh;
   min-height: 375px;
   position: relative;
-  background-size: cover;
 }
 
+@media (max-width: 740px) {
+  #infinite {
+    background-image: url(../img/main-background_cell.jpg);
+  }
+}
 
 @media (min-height: 600px) and (min-width: 1920px) {
   #infinite {
@@ -224,11 +228,33 @@ blockquote {
   }
 }
 
-
-@media (max-width: 740px) {
+@media (min-height: 600px) and (min-width: 1920px) {
   #infinite {
-    background-image: url(../img/main-background_cell.jpg);
     background-size: cover;
+  }
+}
+
+@media (min-height: 830px) {
+  #infinite {
+    background-position: center -180px;
+  }
+}
+
+@media (min-height: 680px) and (max-height: 829px) {
+  #infinite {
+    background-position: center -300px;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 679px) {
+  #infinite {
+    background-position: center -400px;
+  }
+}
+
+@media (max-height: 499px) {
+  #infinite {
+    background-position: center -450px;
   }
 }
 
