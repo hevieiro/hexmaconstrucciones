@@ -216,6 +216,16 @@ blockquote {
   position: relative;
 }
 
+
+@media (min-height: 600px) and (min-width: 1920px) {
+  #infinite {
+    background-size: cover;
+  }
+}
+
+
+
+
 @media (max-width: 740px) {
   #infinite {
     background-image: url(../img/main-background_cell.jpg);
