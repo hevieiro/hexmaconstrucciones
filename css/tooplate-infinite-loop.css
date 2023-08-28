@@ -214,17 +214,14 @@ blockquote {
   height: 100vh;
   min-height: 375px;
   position: relative;
+  background-size: cover;
 }
 
 @media (max-width: 740px) {
   #infinite {
     background-image: url(../img/main-background_cell.jpg);
-  }
-}
-
-@media (min-height: 600px) and (min-width: 1920px) {
-  #infinite {
     background-size: cover;
+    background-position: center -100px;
   }
 }
 
@@ -257,6 +254,7 @@ blockquote {
     background-position: center -450px;
   }
 }
+
 
 .tm-hero-text-container {
   width: 100%;
