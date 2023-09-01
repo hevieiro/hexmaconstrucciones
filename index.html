@@ -156,7 +156,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                   Proyectos de ingeniería y arquitectura<br />
                   Cálculo estructural<br />
                   Renderizado 3D<br />
-                  Diseño arquitectonico<br />
+                  Diseño arquitectónico<br />
                   Diseños y modelados hidráulicos
                 </p>
               </div>
@@ -348,8 +348,7 @@ https://www.tooplate.com/view/2117-infinite-loop
           <div class="text-center col-12">
             <h2 class="tm-text-primary tm-section-title mb-4">ACW COMEX</h2>
             <p class="mx-auto tm-section-desc">
-              Construcción de 300m2 de oficinas en Puerto Madero, obra completa
-              llave en mano
+              Construcción de 300m2 de oficinas en Puerto Madero, obra completa, llave en mano
             </p>
           </div>
         </div>
@@ -631,6 +630,105 @@ https://www.tooplate.com/view/2117-infinite-loop
       </div>
     </section>
 
+    <!-- Pepsi -->
+    <section id="gallery" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2 class="tm-text-primary tm-section-title mb-4">Pepsi</h2>
+            <p class="mx-auto tm-section-desc">
+              Remodelación completa en sala de compresores
+              y torres de enfriamiento.
+            </p>
+          </div>
+        </div>
+        <div class="carousel">
+          <input type="radio" name="slides" checked="checked" id="slidePepsi-1" />
+          <input type="radio" name="slides" id="slidePepsi-2" />
+          <input type="radio" name="slides" id="slidePepsi-3" />
+          <input type="radio" name="slides" id="slidePepsi-4" />
+          <input type="radio" name="slides" id="slidePepsi-5" />
+          <!-- <input type="radio" name="slides" id="slidePepsi-6"> -->
+          <ul class="carousel__slides">
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="img/Trabajos realizados/Pepsi/1.jpg" alt="" />
+                </div>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="img/Trabajos realizados/Pepsi/2.jpg" alt="" />
+                </div>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="img/Trabajos realizados/Pepsi/3.jpg" alt="" />
+                </div>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="img/Trabajos realizados/Pepsi/4.jpg" alt="" />
+                </div>
+              </figure>
+            </li>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="img/Trabajos realizados/Pepsi/5.jpg" alt="" />
+                </div>
+              </figure>
+            </li>
+            <!-- <li class="carousel__slide">
+                      <figure>
+                          <div>
+                              <img src="img/Trabajos realizados/Pepsi/6.jpg" alt="">
+                          </div>
+                      </figure>
+                  </li> -->
+          </ul>
+
+          <ul class="carousel__thumbnails">
+            <li>
+              <label for="slidePepsi-1"
+                ><img src="img/Trabajos realizados/Pepsi/1.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slidePepsi-2"
+                ><img src="img/Trabajos realizados/Pepsi/2.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slidePepsi-3"
+                ><img src="img/Trabajos realizados/Pepsi/3.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slidePepsi-4"
+                ><img src="img/Trabajos realizados/Pepsi/4.jpg" alt=""
+              /></label>
+            </li>
+            <li>
+              <label for="slidePepsi-5"
+                ><img src="img/Trabajos realizados/Pepsi/5.jpg" alt=""
+              /></label>
+            </li>
+            <!-- <li>
+                      <label for="slidePepsi-6"><img src="img/Trabajos realizados/Pepsi/6.jpg" alt=""></label>
+                  </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+
     <section></section>
 
     <!-- Contact -->
@@ -740,13 +838,13 @@ https://www.tooplate.com/view/2117-infinite-loop
             </div>
             <!-- Mail -->
             <div class="contact-item">
-              <a rel="nofollow" href="mailto:hexma@gmail.com" class="item-link">
+              <a rel="nofollow" href="mailto:hexmaconstrucciones@gmail.com" class="item-link">
                 <img
                   class="icon-mail-footer"
                   src="img/Iconos contacto/Mail_icon-contact2.png"
                   alt="wsp-icon"
                 />
-                <span class="mb-0">hexma@gmail.com</span>
+                <span class="mb-0">hexmaconstrucciones@gmail.com</span>
               </a>
             </div>
             <!-- Whatsap -->
@@ -831,20 +929,23 @@ https://www.tooplate.com/view/2117-infinite-loop
     <script src="js/bootstrap.min.js"></script>
     <script>
       function composeMail(event) {
-        event.preventDefault();
-        const contactEmail = document.getElementById("email").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
-        const recipient = "hexma@gmail.com";
-        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
-          subject
-        )}&body=${encodeURIComponent(
-          `${message}\n\nCorreo de contacto: ${contactEmail}`
-        )}`;
+    event.preventDefault();
 
-        window.location.href = mailtoLink;
-      }
+    const nombre = document.getElementById("nombre").value;
+    const localidad = document.getElementById("localidad").value;
+    const email = document.getElementById("email").value;
+    const telefono = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const recipient = "hexmaconstrucciones@gmail.com";
 
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+        `Mensaje de ${nombre} desde ${localidad}`
+    )}&body=${encodeURIComponent(
+        `Nombre: ${nombre}\nLocalidad: ${localidad}\nEmail: ${email}\nTeléfono: ${telefono}\n\nMensaje:\n${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+}
       function getOffSet() {
         var _offset = 450;
         var windowHeight = window.innerHeight;
