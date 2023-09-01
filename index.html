@@ -865,7 +865,7 @@ https://www.tooplate.com/view/2117-infinite-loop
       function setParallaxPosition($doc, multiplier, $object) {
         var offset = getOffSet();
         var from_top = $doc.scrollTop(),
-          bg_css = "center " + (multiplier * from_top - offset) + "px";
+        bg_css = "center " + (multiplier * from_top - offset + 80) + "px";
         $object.css({ "background-position": bg_css });
       }
 
@@ -890,7 +890,7 @@ https://www.tooplate.com/view/2117-infinite-loop
       $(function () {
         // Hero Section - Background Parallax
         if (windowWidth > 760) {
-          background_image_parallax($(".tm-parallax"), 0.3, false);
+          background_image_parallax($(".tm-parallax"), 0.4, false);
 
           // Handle window resize
           window.addEventListener(

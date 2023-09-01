@@ -221,7 +221,7 @@ blockquote {
   #infinite {
     background-image: url(../img/main-background_cell.jpg);
     background-size: cover;
-    background-position: center 50px;
+    background-position: center -100px;
   }
 }
 
@@ -239,19 +239,19 @@ blockquote {
 
 @media (min-height: 680px) and (max-height: 829px) {
   #infinite {
-    background-position: center 50px;
+    background-position: center -300px;
   }
 }
 
 @media (min-height: 500px) and (max-height: 679px) {
   #infinite {
-    background-position: center 50px;
+    background-position: center -400px;
   }
 }
 
 @media (max-height: 499px) {
   #infinite {
-    background-position: center 50px;
+    background-position: center -450px;
   }
 }
 
@@ -1331,17 +1331,17 @@ p {
   width: fit-content;
   height: 100px;
   position: absolute;
-  top: 25%;
-  left: 13%;
+  top: 300px;
+  left: 300px;
 }
 
 .navbar-logo-infinite {
-  width: 400px;
-  height: 150px;
+  width: 500px;
+  height: 200px;
 }
 
 .subtitle-infinite-logo {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
 }
 
